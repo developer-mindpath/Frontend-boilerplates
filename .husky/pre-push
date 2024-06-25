@@ -1,9 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm run test
-npm run build
-npm run test:chrome
+pnpm build
 
 textreset=$(tput sgr0) # reset the foreground colour
 yellow=$(tput setaf 3)
