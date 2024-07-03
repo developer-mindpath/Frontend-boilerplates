@@ -3,5 +3,5 @@
  * @return {JSX.Element}
  */
 export default function Login() {
-  return <div>Login Page</div>;
+  return <div>LogIn Page</div>;
 }
