@@ -1,4 +1,94 @@
-{
+// app/page.tsx
+import React from 'react';
+
+const Page = () => {
+  return (
+    <div className="min-h-screen bg-gray-100 py-10 px-5">
+      <div className="max-w-4xl mx-auto bg-white p-8 shadow-md rounded-lg">
+        <h1 className="text-3xl font-bold mb-5">
+          Next.js Custom Project Setup Guide
+        </h1>
+        <p className="mb-4">
+          This project is set up with the following tools and configurations:
+        </p>
+        <ul className="list-disc list-inside mb-5">
+          <li>
+            <strong>Next.js:</strong> A React framework for server-side
+            rendering and static site generation.
+          </li>
+          <li>
+            <strong>Tailwind CSS:</strong> A utility-first CSS framework for
+            rapid UI development.
+          </li>
+          <li>
+            <strong>ESLint:</strong> A tool for identifying and fixing linting
+            issues in JavaScript and TypeScript code.
+          </li>
+          <li>
+            <strong>Prettier:</strong> A code formatter to ensure consistent
+            code style across the project.
+          </li>
+          <li>
+            <strong>PostCSS:</strong> A tool for transforming CSS with
+            JavaScript plugins.
+          </li>
+          <li>
+            <strong>Autoprefixer:</strong> A PostCSS plugin to parse CSS and add
+            vendor prefixes.
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mb-3">Setup Steps</h2>
+
+        <h3 className="text-xl font-semibold mb-2">
+          1. Create a Next.js Project
+        </h3>
+        <pre className="bg-gray-200 p-3 rounded mb-5">
+          <code>npx create-next-app my-nextjs-project</code>
+        </pre>
+
+        <h3 className="text-xl font-semibold mb-2">2. Install Tailwind CSS</h3>
+        <pre className="bg-gray-200 p-3 rounded mb-5">
+          <code>
+            {`npm install -D tailwindcss postcss autoprefixer\nnpx tailwindcss init -p`}
+          </code>
+        </pre>
+        <p className="mb-4">
+          Configure <code>tailwind.config.js</code>:
+        </p>
+        <pre className="bg-gray-200 p-3 rounded mb-5">
+          <code>
+            {`module.exports = {
+  content: [
+    './app/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}`}
+          </code>
+        </pre>
+        <p className="mb-4">
+          Add the following to <code>styles/globals.css</code>:
+        </p>
+        <pre className="bg-gray-200 p-3 rounded mb-5">
+          <code>{`@tailwind base;\n@tailwind components;\n@tailwind utilities;`}</code>
+        </pre>
+
+        <h3 className="text-xl font-semibold mb-2">
+          3. Install ESLint and Prettier
+        </h3>
+        <pre className="bg-gray-200 p-3 rounded mb-5 overflow-auto">
+          <code>{`npm install -D eslint prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier`}</code>
+        </pre>
+        <p className="mb-4">
+          Create <code>.eslintrc.json</code>:
+        </p>
+        <pre className="bg-gray-200 p-3 rounded mb-5 h-[600px] overflow-auto">
+          <code>
+            {`{
   "env": {
     "browser": true,
     "commonjs": false,
@@ -129,3 +219,28 @@
     "src/components/ui"
   ]
 }
+
+`}
+          </code>
+        </pre>
+        <p className="mb-4">
+          Create <code>.prettierrc</code>:
+        </p>
+        <pre className="bg-gray-200 p-3 rounded mb-5">
+          <code>
+            {`{
+  "printWidth": 80,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "endOfLine": "lf",
+  "tabWidth": 2
+}
+`}
+          </code>
+        </pre>
+      </div>
+    </div>
+  );
+};
+
+export default Page;
