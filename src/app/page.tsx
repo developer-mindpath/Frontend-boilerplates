@@ -36,6 +36,10 @@ const Page = () => {
             <strong>Autoprefixer:</strong> A PostCSS plugin to parse CSS and add
             vendor prefixes.
           </li>
+          <li>
+            <strong>Husky:</strong> A tool for managing Git hooks to enforce
+            code quality and run scripts before commits and pushes.
+          </li>
         </ul>
 
         <h2 className="text-2xl font-semibold mb-3">Setup Steps</h2>
