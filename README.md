@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Boilerplate
 
-## Getting Started
+This boilerplate project provides a ready-to-use setup for Next.js applications with essential tools and configurations.
 
-First, run the development server:
+## Project Includes
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **React.js**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Husky**: Git hooks for linting and formatting pre-commit.
+- **ESLint**: A tool for identifying and fixing problems in JavaScript code.
+- **Prettier**: A code formatter to maintain consistent code style.
+- **TypeScript**: A superset of JavaScript with static types.
+- **pnpm**: A fast and efficient package manager.
+- **PostCSS**: A tool for transforming CSS with JavaScript plugins.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Engine Requirements
+- **Node.js**: >=20.0.0
+- **pnpm**: >=8
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Setup
+1. **Clone the Repository**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+   ```bash
+   git clone https://github.com/your-repo/nextjs-boilerplate.git
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install Dependencies**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   pnpm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Run the Development Server**
 
-## Deploy on Vercel
+   ```bash
+   pnpm dev
+   
+4. **Build for Production**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   pnpm build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. **Start the Application in Production Mode**
+
+   ```bash
+   pnpm start
+**Note: Make sure to change the repository URL to your own GitHub repository.**
+
