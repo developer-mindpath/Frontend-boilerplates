@@ -8,19 +8,15 @@ import {
 
 import 'App.css';
 
-import SignIn from './pages/signIn/signIn';
-import Profile from './pages/profile/profile';
-import SignUp from './pages/signUp/signUp';
 import NotFound from './pages/404';
+import MainPage from './pages/mainPage/mainPage';
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/signIn" replace />} />
-        <Route path="/signIn" element={<SignIn />} />
-        <Route path="/signUp" element={<SignUp />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/" element={<Navigate to="/mainPage" replace />} />
+        <Route path="/mainPage" element={<MainPage />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>
